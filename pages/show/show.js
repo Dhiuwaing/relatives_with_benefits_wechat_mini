@@ -1,4 +1,6 @@
 // pages/show/show.js
+
+const app = getApp()
 Page({
 
   /**
@@ -62,5 +64,15 @@ Page({
    */
   onShareAppMessage: function () {
 
+<<<<<<< HEAD
+=======
+  },
+  getUserInfo: function (e) {
+    console.log(e)
+    app.globalData.userInfo = e.detail.userInfo
+    this.setData({
+      userInfo: e.detail.userInfo
+    })
+>>>>>>> e84837f443eebd8637c171d7f5d2616caf6def05
   }
 })
