@@ -1,4 +1,4 @@
-/**index.wxss**/
+
 .banner {
   background-color: white;
   background-size: cover;
@@ -6,11 +6,11 @@
   padding: 120rpx 30rpx;
   height: 10vh;
 }
-
 .divider {
   height:120rpx;
-  background-color: whitesmoke;
+  background-color: white;
 }
+
 .card-product {
   height:303rpx;
   width: 252rpx;
@@ -21,18 +21,18 @@
   margin: 8px;
   border-radius: 4px;
 }
-
 .card-product-1 {
   height:303rpx;
   width: 252rpx;
-  justify-content: center;
+  display: flex;
+  justify-content: flex-end;
   padding: 16px;
   margin: 8px;
   border-radius: 4px;
 }
-
 .row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+

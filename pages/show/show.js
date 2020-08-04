@@ -1,4 +1,5 @@
 // pages/show/show.js
+
 const app = getApp()
 Page({
 
@@ -62,6 +63,7 @@ Page({
    * Called when user click on the top right corner to share
    */
   onShareAppMessage: function () {
+
 
   },
   getUserInfo: function (e) {
