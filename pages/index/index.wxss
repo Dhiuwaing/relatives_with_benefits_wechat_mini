@@ -1,3 +1,4 @@
+
 .banner {
   background-color: white;
   background-size: cover;
@@ -9,6 +10,7 @@
   height:120rpx;
   background-color: white;
 }
+
 .card-product {
   height:303rpx;
   width: 252rpx;
@@ -33,3 +35,4 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+

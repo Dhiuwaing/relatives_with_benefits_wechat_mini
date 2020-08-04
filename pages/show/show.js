@@ -64,8 +64,7 @@ Page({
    */
   onShareAppMessage: function () {
 
-<<<<<<< HEAD
-=======
+
   },
   getUserInfo: function (e) {
     console.log(e)
@@ -73,6 +72,5 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo
     })
->>>>>>> e84837f443eebd8637c171d7f5d2616caf6def05
   }
 })
