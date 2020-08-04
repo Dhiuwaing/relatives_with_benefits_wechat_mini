@@ -27,8 +27,16 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
+
+		"nodeModules": false,
+		"enhance": false,
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"showShadowRootInWxmlPanel": true
+=======
 		"useCompilerModule": true,
 		"userConfirmedUseCompilerModuleSwitch": false
+
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.12.0",
