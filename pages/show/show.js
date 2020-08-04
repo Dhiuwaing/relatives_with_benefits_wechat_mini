@@ -1,4 +1,4 @@
-// pages/testIndex/testIndex.js
+// pages/show/show.js
 Page({
 
   /**
@@ -12,20 +12,8 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-      const page  = this
-      wx.request({
-        url: "http://localhost:3000/api/v1/hosts",
-        method: 'GET',
-        success(res) {
-          const hosts = res.data;
-          page.setData({
-            hosts: hosts,
-          });
-          console.log(hosts)
-        }
-      })
-      },
 
+  },
 
   /**
    * Lifecycle function--Called when page is initially rendered
