@@ -1,0 +1,3 @@
+<!--pages/show/show.wxml-->
+<text>pages/show/show.wxml</text>
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
