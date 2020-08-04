@@ -1,0 +1,8 @@
+<!--pages/testIndex/testIndex.wxml-->
+<view wx:key="index" wx:for="{{hosts}}" wx:for-item="host">
+  <!-- <view data-index="{{host.id}}" bindtap="goToShow" class="card-product"> -->
+  <view class="card-product-infos">
+    <view class='h2'>{{host.id}}</view>
+  <!-- </view> -->
+  </view>
+</view>

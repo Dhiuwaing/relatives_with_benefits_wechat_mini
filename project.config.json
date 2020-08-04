@@ -4,29 +4,36 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
-		"scopeDataCheck": false,
-		"coverView": true,
+		"urlCheck": false,
 		"es6": true,
+		"enhance": false,
 		"postcss": true,
-		"compileHotReLoad": false,
 		"preloadBackgroundData": false,
 		"minified": true,
-		"autoAudits": false,
 		"newFeature": false,
-		"uglifyFileName": false,
-		"uploadWithSourceMap": true,
-		"useIsolateContext": true,
+		"coverView": true,
 		"nodeModules": false,
-		"enhance": false,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useIsolateContext": true,
 		"useCompilerModule": false,
-		"userConfirmedUseCompilerModuleSwitch": false,
-		"showShadowRootInWxmlPanel": true
+		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.12.0",
 	"appid": "wx0946b6a0ca9fe034",
-	"projectname": "relatives%20with%20benefits%20wechat%20mini",
+	"projectname": "relatives_with_benefits_wechat_mini",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -43,11 +50,11 @@
 			"current": -1,
 			"list": []
 		},
-		"game": {
+		"plugin": {
 			"current": -1,
 			"list": []
 		},
-		"plugin": {
+		"game": {
 			"current": -1,
 			"list": []
 		},
@@ -57,7 +64,15 @@
 		},
 		"miniprogram": {
 			"current": -1,
-			"list": []
+			"list": [
+				{
+					"id": 0,
+					"name": "pages/testIndex/testIndex",
+					"pathName": "pages/testIndex/testIndex",
+					"query": "",
+					"scene": null
+				}
+			]
 		}
 	}
 }
