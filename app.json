@@ -5,9 +5,9 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#FFA555",
+    "navigationBarTitleText": "Relatives With Benefits",
+    "navigationBarTextStyle":"white"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

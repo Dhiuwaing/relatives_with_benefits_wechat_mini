@@ -11,4 +11,10 @@
 
 <button class="btn-orange" bindtap="setPlain">Book</button>
 
-<view class="bottom-navbar"></view>
+<view class="bottom-navbar">
+  <view class="nav-content">
+    <navigator class= "icon">Home</navigator> 
+    <navigator class="icon-center">Messages</navigator> 
+    <navigator class="icon">Profile</navigator> 
+  </view>
+</view>

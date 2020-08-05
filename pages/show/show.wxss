@@ -2,7 +2,6 @@
 .img {
   position: center;
   background-position: cover;
-  /* background-color: lightcoral; */
   width: 100vw;
 }
 
@@ -20,7 +19,7 @@
 }
 
 .host-card {
-background-color: lightgray;
+background-color: rgba(200, 200, 200, 0.2);
 margin-top: 20rpx;
 padding:30rpx;
 height: 500rpx;
@@ -36,11 +35,34 @@ border-radius: 8rpx;
   position: fixed;
   bottom: 0;
   width: 100vw;
+  display:flex;
+  justify-content: center;
 }
 
+.icon {
+  font-size: 14px;
+  display: inline-flex;
+  margin: 10px;
+  padding: 8px;
+  justify-content: center;
+}
+
+.icon-center {
+  font-size: 14px;
+  display: inline-flex;
+  margin: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 8px;
+  justify-content: center;
+}
+
+
+
+
 .btn-orange {
-  background-color: orange;
+  background-color: rgb(255, 188, 100);
   color: white;
-  margin: 30rpx;
+  margin: 30rpx; 
 }
 
