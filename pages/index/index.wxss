@@ -35,7 +35,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
+/* 
 .bottom-navbar {
   height: 120rpx;
   border-top-style: solid;
@@ -46,8 +46,8 @@
   width: 100vw;
   display:flex;
   justify-content: center;
-}
-
+} */
+/* 
 .icon {
   font-size: 14px;
   display: inline-flex;
@@ -64,4 +64,4 @@
   margin-right: 30px;
   padding: 8px;
   justify-content: center;
-}
+} */
