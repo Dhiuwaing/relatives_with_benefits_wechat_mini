@@ -1,4 +1,14 @@
 <!--pages/show/show.wxml-->
-<text>pages/show/show.wxml</text>
 
-<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">Login</button>
+<image class="img" src= "https://picsum.photos/seed/picsum/200/300"/>
+
+<view class="h2">Name</view>
+<view class="row">
+  <view class="host-card">
+    <view class="p">Description</view>    
+  </view>
+</view>
+
+<button class="btn-orange" bindtap="setPlain">Book</button>
+
+<view class="bottom-navbar"></view>

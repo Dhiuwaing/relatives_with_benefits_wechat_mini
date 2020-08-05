@@ -1,1 +1,46 @@
 /* pages/show/show.wxss */
+.img {
+  position: center;
+  background-position: cover;
+  /* background-color: lightcoral; */
+  width: 100vw;
+}
+
+.h2 {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+  height: 80rpx;
+  padding-left :80rpx;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.host-card {
+background-color: lightgray;
+margin-top: 20rpx;
+padding:30rpx;
+height: 500rpx;
+width: 80vw;
+border-radius: 8rpx;
+}
+
+.bottom-navbar {
+  height: 120rpx;
+  border-top-style: solid;
+  border-color: whitesmoke;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+
+.btn-orange {
+  background-color: orange;
+  color: white;
+  margin: 30rpx;
+}
+
