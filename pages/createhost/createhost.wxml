@@ -1,0 +1,24 @@
+
+<view class="form">
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="section1">
+<input name="description" placeholder="Type in your description..." />
+</view>
+<view class="section2">
+<input name="location" placeholder="Type in your location..." />
+</view>
+<view class="section3">
+<input name="category" placeholder="Type in your category..." />
+</view>
+<view class="section4">
+<input name="gender" placeholder="Type in your gender..." />
+</view>
+<view class="section5">
+<input name="age" placeholder="Type in your age..." />
+</view>
+<view class="btn-area">
+<button type="primary" form-type="submit">Submit</button>
+<button form-type="reset">Reset</button>
+</view>
+</form>
+</view>
