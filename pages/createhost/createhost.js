@@ -19,12 +19,18 @@ Page({
     let category = event.detail.value.category;
     let gender = event.detail.value.gender;
     let age = event.detail.value.age;
+    let url = event.detail.value.url;
+    let image_url = event.detail.value.image_url;
+    let name = event.detail.value.name;
     let host = {
       user_id: app.globalData.userId,
+      name: name,
       description: description,
       location: location,
       category: category,
       gender: gender,
+      url: url,
+      image_url: image_url,
       age: age
     }
     wx.request({
