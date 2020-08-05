@@ -11,3 +11,11 @@
   </view>
   <view wx:for="{{hosts.length%2}}" class="card-product-1"></view>
 </view>
+
+<view class="bottom-navbar">
+  <view class="nav-content">
+    <navigator class= "icon">Home</navigator> 
+    <navigator class="icon-center">Messages</navigator> 
+    <navigator class="icon">Profile</navigator> 
+  </view>
+</view>
