@@ -38,8 +38,8 @@ Page({
       method: 'POST',
       data: host,
       success: (res) => {
-        console.log(res)
-        wx.redirectTo({
+        console.log('create', res)
+        wx.switchTab({
         url: '/pages/index/index'
       })
     }

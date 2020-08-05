@@ -26,7 +26,7 @@ height: 500rpx;
 width: 80vw;
 border-radius: 8rpx;
 }
-
+/* 
 .bottom-navbar {
   height: 120rpx;
   border-top-style: solid;
@@ -37,8 +37,8 @@ border-radius: 8rpx;
   width: 100vw;
   display:flex;
   justify-content: center;
-}
-
+} */
+/* 
 .icon {
   font-size: 14px;
   display: inline-flex;
@@ -56,7 +56,7 @@ border-radius: 8rpx;
   padding: 8px;
   justify-content: center;
 }
-
+ */
 
 
 
