@@ -8,6 +8,14 @@
     <input class="searchbar" bindinput="searchInput" name="input" placeholder="Search families" />
     <button class="btn" style="background: none" bindtap="searchForm">..</button>
   </view>
+
+ <view class="section">
+    <view class="section__title">Search Here</view>
+    <input bindinput="searchInput" name="input" placeholder="please input here" />
+    <button class= "search-button"bindtap="searchForm">Submit</button>
+  </view> 
+
+  <view class="container"></view>
 </view>
   
 <!-- <view class="container"></view> -->
