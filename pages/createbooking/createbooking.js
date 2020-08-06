@@ -7,6 +7,17 @@ Page({
   data: {
 
   },
+  formSubmit: function(event) {
+    let name = event.detail.value.name
+    let description = event.detail.value.description
+    let location = event.detail.value.location
+
+    app.globalData.hosts.unshift({location, description, name})
+
+    wx.switchTab({
+      url: 'pages/book/book',
+    })
+  },
 
   /**
    * Lifecycle function--Called when page load
