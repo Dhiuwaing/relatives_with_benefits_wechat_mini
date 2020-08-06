@@ -5,7 +5,7 @@
 </view>
 <view class="divider"></view>
 <view class="row">
-  <view class="card-product" wx:for="{{hosts}}" wx:for-item="host" data-index="{{host.id}}" bindtap="goToShow"> 
+  <view class="card-product" wx:for="{{hosts}}" wx:for-item="host" data-id="{{host.id}}" bindtap="goToShow"> 
    <view class='h2'>{{host.category}}</view>
     <view class='p'>{{host.description}}</view>
   </view>

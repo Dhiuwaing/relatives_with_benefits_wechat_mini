@@ -1,6 +1,7 @@
 // pages/show/show.js
 
 const app = getApp()
+const host = app.globalData.host;
 Page({
 
   /**
@@ -11,8 +12,10 @@ Page({
   },
 
   goToBook: function (e) {
+    let id = e.currentTarget.dataset.id
+    console.log(id)
     wx.switchTab({
-      url: `/pages/book/book`,
+      url: `/pages/book/book?hostId=${id}`,
     })
   },
 
@@ -21,8 +24,9 @@ Page({
    */
   onLoad: function (options) {
     const page  = this
+    let id = options.id
     wx.request({
-      url: `http://localhost:3000/api/v1/hosts/${options.index}`,
+      url: `${host}/hosts/${id}`,
       method: 'GET',
       success(res) {
         const host = res.data;
@@ -90,16 +94,16 @@ Page({
       userInfo: e.detail.userInfo
     })
   },
-  onLoad: function (options) {
-    const that = this
-    wx.getLocation({
-      type: 'wgs84', // **1
-      success: function(res) {
-        const latitude = res.latitude
-        const longitude = res.longitude
-        that.setData({latitude, longitude})
-      }
-    })
-  },
+  // onLoad: function (options) {
+  //   const that = this
+  //   wx.getLocation({
+  //     type: 'wgs84', // **1
+  //     success: function(res) {
+  //       const latitude = res.latitude
+  //       const longitude = res.longitude
+  //       that.setData({latitude, longitude})
+  //     }
+  //   })
+  // },
   
 })

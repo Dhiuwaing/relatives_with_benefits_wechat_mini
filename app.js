@@ -7,7 +7,7 @@ App({
         console.log('code', res)
       // insert next code here
       wx.request({
-        url: host + 'login',
+        url: this.globalData.host + '/login',
         method: 'post',
         data: {
           code: res.code
@@ -22,6 +22,8 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    host: "http://localhost:3000/api/v1"
+    // host: "http://relatives-with-benefits.herokuapp.com/api/v1"
   },
 })

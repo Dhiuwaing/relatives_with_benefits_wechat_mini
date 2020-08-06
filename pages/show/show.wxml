@@ -13,7 +13,7 @@
 <view>Get current location</view>
 <view>Latitude : {{latitude}}</view>
 <view>Longitude : {{longitude}}</view>
-<map bindmarkertap="markertap" longitude="{{lg}}" latitude="{{lt}}" scale="{{sc}}" style="width: 100%; height: 80vh;" markers="{{mk}}"></map>
-<button class="btn-orange" bindtap="goToBook">Book</button>
+<!-- <map bindmarkertap="markertap" longitude="{{lg}}" latitude="{{lt}}" scale="{{sc}}" style="width: 100%; height: 80vh;" markers="{{mk}}"></map> -->
+<button class="btn-orange" data-id="{{host.id}}" bindtap="goToBook">Book</button>
 
 

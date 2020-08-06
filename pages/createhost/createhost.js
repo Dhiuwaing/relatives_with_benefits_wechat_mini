@@ -8,9 +8,17 @@ Page({
    * Page initial data
    */
   data: {
+    array: ['mom', 'dad', 'brother']
 
   },
 
+  bindPickerChange: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail)
+
+    this.setData({
+      index: e.detail.value
+    })
+  },
 
   formSubmit: function(event) {
     
