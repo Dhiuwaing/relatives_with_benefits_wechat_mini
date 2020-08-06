@@ -1,19 +1,17 @@
 <!--pages/show/show.wxml-->
-
-<image class="img" src= "https://picsum.photos/seed/picsum/200/300"/>
-
-<view class="h2">{{host.category}}</view>
+<image class='img' src="{{host.url}}"></image>
 <view class="row">
   <view class="host-card">
+    <view class='h2'>Hello!My name is {{host.name}}.</view>
+    <view class="p"> I am {{host.age}} years old.</view> 
     <view class="p">{{host.description}}</view>  
-    <view class="p">{{host.location}}</view> 
-    <view class="p">{{host.age}}</view>
+    <view class="p">Please consider renting me!</view>
+  
   </view>
 </view>
-<view>Get current location</view>
-<view>Latitude : {{latitude}}</view>
-<view>Longitude : {{longitude}}</view>
-<!-- <map bindmarkertap="markertap" longitude="{{lg}}" latitude="{{lt}}" scale="{{sc}}" style="width: 100%; height: 80vh;" markers="{{mk}}"></map> -->
+<view>Host's location</view>
+
+<map id="map" longitude="113.324520" latitude="23.099994" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
 <button class="btn-orange" data-id="{{host.id}}" bindtap="goToBook">Book</button>
 
 

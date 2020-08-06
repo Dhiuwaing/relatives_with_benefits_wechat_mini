@@ -4,7 +4,7 @@
  <view class="section">
     <view class="section__title">Search Here</view>
     <input bindinput="searchInput" name="input" placeholder="please input here" />
-    <button bindtap="searchForm">Submit</button>
+    <button class= "search-button"bindtap="searchForm">Submit</button>
   </view> 
 
   <view class="container"></view>
