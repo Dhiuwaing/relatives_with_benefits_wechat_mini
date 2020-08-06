@@ -1,5 +1,6 @@
 /* pages/book/book.wxss */
 
+
 .divider {
   height:120rpx;
   background-color: white;
