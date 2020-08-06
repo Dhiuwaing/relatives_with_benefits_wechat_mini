@@ -7,49 +7,40 @@ Page({
   data: {
 
   },
-  formSubmit: function(event) {
+
+  submit: function(event) {
     let name = event.detail.value.name
+    let gender = event.detail.value.gender
     let description = event.detail.value.description
     let location = event.detail.value.location
 
-    app.globalData.hosts.unshift({location, description, name})
-
-    wx.switchTab({
-      url: 'pages/book/book',
+    let host = {
+      name: name,
+      gender: gender,
+      description: description,
+      location: location
+    }
+    wx.request({
+      url: `http://localhost:3000/api/v1/hosts`,
+      method: 'POST',
+      data: host,
+      success(res) {
+        console.log(res)
+      }
     })
   },
-
-  /**
-   * Lifecycle function--Called when page load
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page is initially rendered
-   */
   onReady: function () {
 
   },
 
-  /**
-   * Lifecycle function--Called when page show
-   */
   onShow: function () {
 
   },
 
-  /**
-   * Lifecycle function--Called when page hide
-   */
   onHide: function () {
 
   },
 
-  /**
-   * Lifecycle function--Called when page unload
-   */
   onUnload: function () {
 
   },

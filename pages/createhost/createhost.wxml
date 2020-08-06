@@ -1,35 +1,49 @@
 
 <view class="form">
 <form bindsubmit="formSubmit" bindreset="formReset">
-
   <picker bindchange="bindPickerChange" value="{{array}}" range="{{array}}">
     <view class="picker">
-      当前选择：{{array[key]}}
+      Select your role：{{array[key]}}
     </view>
   </picker>
-<view class="section0">
+<view class="picker-section">
 <input name="name" placeholder="Type in your name..." />
 </view>
-<view class="section1">
-<input name="description" placeholder="Type in your description..." />
+<view class="picker-section">
+<input name="gender" placeholder="Type in your gender..." />
 </view>
-<view class="section2">
-<input name="location" placeholder="Type in your location..." />
+<view class="picker-section">
+<input name="description" placeholder="Describe yourself.." />
 </view>
-<view class="section3">
+<view class="picker-section">
+<picker bindchange="bindPickerChange2" value="{{array2}}" range="{{array2}}">
+    <view class="picker">
+      Select your location：{{array2[key]}}
+    </view>
+  </picker>
+</view>
+<view class="picker-section">
 <input name="category" placeholder="Type in your category..." />
 </view>
 
-<view class="section4">
-<input name="gender" placeholder="Type in your gender..." />
+<view class="picker-section">
+ <checkbox-group name="checkbox">
+      <label><checkbox value="checkbox1"/>Female</label>
+      <label><checkbox value="checkbox2"/>Male</label>
+    </checkbox-group>
 </view>
-<view class="section5">
-<input name="age" placeholder="Type in your age..." />
+<view class="picker-section">
+<view class="section section_gap">
+  <text class="section__title"> Set your age </text>
+  <view class="body-view">
+    <slider bindchange="slider4change" min="18" max="80" show-value/>
+  </view>
 </view>
-<view class="section6">
+</view>
+<view class="picker-section">
 <input name="url" placeholder="Type in your url..." />
 </view>
-<view class="section7">
+<view class="picker-section">
 <input name="image_url" placeholder="Type in your image url..." />
 </view>
 <view class="btn-area">
