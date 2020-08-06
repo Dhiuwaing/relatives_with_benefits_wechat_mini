@@ -11,3 +11,7 @@
   display: flex;
   justify-content: space-evenly;
   }
+  
+  .picker-section {
+    margin: 20rpx 0;
+  }
