@@ -21,22 +21,27 @@
         {
     "pagePath": "pages/index/index",
     "text": "hosts",
-    "iconPath": "",
+    "iconPath":  "/images/love.png",
     "selectedIconPath": ""
         },
         {
           "pagePath": "pages/book/book",
           "text": "bookings",
-          "iconPath": "",
+          "iconPath": "/images/love.png",
           "selectedIconPath": ""
               },
-
         {
       "pagePath": "pages/createhost/createhost",
-      "text": "my host",
-      "iconPath": "",
+      "text": "add host",
+      "iconPath":  "/images/love.png",
       "selectedIconPath": ""
-      }
+      },
+      {
+        "pagePath": "pages/createhost/createhost",
+        "text": "my profile",
+        "iconPath":  "/images/love.png",
+        "selectedIconPath": ""
+        }
       ]
       },
 

@@ -2,6 +2,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
+const host = app.globalData.host;
 
 Page({
   data: {
@@ -11,7 +12,7 @@ Page({
   onShow: function () {
     const page  = this
     wx.request({
-      url: "http://localhost:3000/api/v1/hosts",
+      url: `${host}/hosts`,
       method: 'GET',
       success(res) {
         console.log('in show', res)
@@ -24,28 +25,28 @@ Page({
     })
     },
     onLoad: function (options) {
-      let that = this
-      wx.authorize({
-        scope: 'scope.userLocation',
-          success(res){
-            console.log(res)
-            wx.chooseLocation({
-              success: function(res) {
-              console.log(res)
-            }
-          })
-        },
-        fail(err) {
-          console.log(err)
-        }
-      })
+      // let that = this
+      // wx.authorize({
+      //   scope: 'scope.userLocation',
+      //     success(res){
+      //       console.log(res)
+      //       wx.chooseLocation({
+      //         success: function(res) {
+      //         console.log(res)
+      //       }
+      //     })
+      //   },
+      //   fail(err) {
+      //     console.log(err)
+      //   }
+      // })
     },
 
     
   goToShow: function (e) {
-    let index = e.currentTarget.dataset.index
+    let id = e.currentTarget.dataset.id
     wx.navigateTo({
-      url: `/pages/show/show?index=${index}`,
+      url: `/pages/show/show?id=${id}`,
     })
   },
   data: {
