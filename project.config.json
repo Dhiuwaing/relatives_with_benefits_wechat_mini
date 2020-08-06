@@ -27,7 +27,7 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": true,
+		"useCompilerModule": false,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
@@ -90,6 +90,13 @@
 					"id": -1,
 					"name": "create booking",
 					"pathName": "pages/createbooking/createbooking",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/book/book",
+					"pathName": "pages/book/book",
 					"scene": null
 				}
 			]

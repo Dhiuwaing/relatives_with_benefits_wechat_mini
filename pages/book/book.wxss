@@ -1,1 +1,48 @@
 /* pages/book/book.wxss */
+
+.divider {
+  height:120rpx;
+  background-color: white;
+}
+
+.delete {
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-blue {
+  background-color: lightskyblue;
+  height: 550rpx;
+  width: 90vw;
+  border-radius: 8px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-bar {
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-top: 25rpx;
+  width: 80vw;
+  height: 50rpx;
+  background-color: white;
+}
+
+.message-bar {
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-top: 25rpx;
+  width: 80vw;
+  height: 250rpx;
+  background-color: white;
+}
+
+.btn-red {
+  background-color: rgb(197, 60, 60);
+  color: white;
+  padding: 15rpx;
+ 
+
+}
