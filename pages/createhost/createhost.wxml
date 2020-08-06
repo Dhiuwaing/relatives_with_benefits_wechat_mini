@@ -1,27 +1,34 @@
 
 <view class="form">
 <form bindsubmit="formSubmit" bindreset="formReset">
-
   <picker bindchange="bindPickerChange" value="{{array}}" range="{{array}}">
     <view class="picker">
-      当前选择：{{array[key]}}
+      Select a category：{{array[key]}}
     </view>
   </picker>
-<view class="section0">
+<view class="picker-section">
 <input name="name" placeholder="Type in your name..." />
 </view>
-<view class="section1">
+<view class="picker-section">
 <input name="description" placeholder="Type in your description..." />
 </view>
-<view class="section2">
-<input name="location" placeholder="Type in your location..." />
+<view class="picker-section">
+<picker bindchange="bindPickerChange2" value="{{array2}}" range="{{array2}}">
+    <view class="picker">
+      Select your location：{{array2[key]}}
+    </view>
+  </picker>
 </view>
 <view class="section3">
 <input name="category" placeholder="Type in your category..." />
 </view>
 
-<view class="section4">
-<input name="gender" placeholder="Type in your gender..." />
+<view class="picker-section">
+<picker bindchange="bindPickerChange3" value="{{array3}}" range="{{array3}}">
+    <view class="picker">
+      Select your gender：{{array3[key]}}
+    </view>
+  </picker>
 </view>
 <view class="section5">
 <input name="age" placeholder="Type in your age..." />

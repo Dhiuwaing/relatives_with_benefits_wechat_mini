@@ -1,27 +1,34 @@
 // pages/createhost/createhost.js
 const app = getApp();
 console.log(app.globalData.userId);
-
 Page({
-
   /**
    * Page initial data
    */
   data: {
-    array: ['mom', 'dad', 'brother']
-
+    array: ["grandfather", "grandmother", "mother", "father", "brother", "sister"],
+    array2: ["Shanghai", "Taipei", "Hong Kong", "Xi'an", "Beijing", "Tianjin", "Haerbin", "Gaoxiong", "Pingdong"],
+    array3: ['Woman', 'Man']
   },
-
   bindPickerChange: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail)
-
     this.setData({
       index: e.detail.value
     })
   },
-
+  bindPickerChange2: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail)
+    this.setData({
+      index: e.detail.value
+    })
+  },
+  bindPickerChange3: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail)
+    this.setData({
+      index: e.detail.value
+    })
+  },
   formSubmit: function(event) {
-    
     let description = event.detail.value.description;
     let location = event.detail.value.location;
     let category = event.detail.value.category;
