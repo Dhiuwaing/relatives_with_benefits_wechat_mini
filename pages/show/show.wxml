@@ -2,17 +2,18 @@
 
 <image class="img" src= "https://picsum.photos/seed/picsum/200/300"/>
 
-<view class="h2">Name</view>
+<view class="h2">{{host.category}}</view>
 <view class="row">
   <view class="host-card">
-    <view class="p">Description</view>    
+    <view class="p">{{host.description}}</view>  
+    <view class="p">{{host.location}}</view> 
+    <view class="p">{{host.age}}</view>
   </view>
 </view>
 <view>Get current location</view>
 <view>Latitude : {{latitude}}</view>
 <view>Longitude : {{longitude}}</view>
 <map bindmarkertap="markertap" longitude="{{lg}}" latitude="{{lt}}" scale="{{sc}}" style="width: 100%; height: 80vh;" markers="{{mk}}"></map>
+<button class="btn-orange" bindtap="goToBook">Book</button>
 
-<button class="btn-orange" bindtap="setPlain">Book</button>
 
-<view class="bottom-navbar"></view>

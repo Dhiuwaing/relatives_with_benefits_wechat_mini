@@ -8,12 +8,13 @@ Page({
     
   },
 
-  onLoad: function (options) {
+  onShow: function () {
     const page  = this
     wx.request({
       url: "http://localhost:3000/api/v1/hosts",
       method: 'GET',
       success(res) {
+        console.log('in show', res)
         const hosts = res.data;
         page.setData({
           hosts: hosts,

@@ -6,8 +6,9 @@
 <view class="divider"></view>
 <view class="row">
   <view class="card-product" wx:for="{{hosts}}" wx:for-item="host" data-index="{{host.id}}" bindtap="goToShow"> 
-   <view class='h2'>{{host.id}}</view>
+   <view class='h2'>{{host.category}}</view>
     <view class='p'>{{host.description}}</view>
   </view>
   <view wx:for="{{hosts.length%2}}" class="card-product-1"></view>
 </view>
+
