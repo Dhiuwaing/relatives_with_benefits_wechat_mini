@@ -67,8 +67,28 @@ Page({
     console.log(e.markerId)
  },
 
-
-
+  searchInput: function(e) {
+    console.log(e)
+    this.setData({
+      searchKeyWord: e.detail.value
+    })
+  },
+ 
+ searchForm: function(e) {
+   let page = this
+   let searchKeyWord = page.data.searchKeyWord
+   wx.request({
+    url: `http://localhost:3000/api/v1/hosts?query=${searchKeyWord}`,
+    method: 'GET',
+    success(res) {
+      const hosts = res.data;
+      page.setData({
+        hosts: hosts,
+      });
+      console.log(hosts)
+    }
+  })
+ },
 
   // //事件处理函数
   // bindViewTap: function() {
