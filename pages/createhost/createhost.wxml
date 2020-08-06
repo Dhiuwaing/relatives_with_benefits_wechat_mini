@@ -24,11 +24,10 @@
 </view>
 
 <view class="picker-section">
-<picker bindchange="bindPickerChange3" value="{{array3}}" range="{{array3}}">
-    <view class="picker">
-      Select your gender：{{array3[key]}}
-    </view>
-  </picker>
+<radio-group name="radio-group">
+      <label><radio value="radio1"/>Male</label>
+      <label><radio value="radio2"/>Female</label>
+    </radio-group>
 </view>
 <view class="picker-section">
 <view class="section section_gap">
