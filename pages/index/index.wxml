@@ -1,14 +1,16 @@
 <!--pages/testIndex/testIndex.wxml-->
-<view class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url();">
 
- <view class="section">
-    <view class="section__title">Search Here</view>
-    <input bindinput="searchInput" name="input" placeholder="please input here" />
-    <button bindtap="searchForm">Submit</button>
-  </view> 
-
-  <view class="container"></view>
+<view class="banner-wrapper">
+  <view class="white"></view>
+    <image class="banner" src="/images/banban.jpg"></image>
+  <view class="section">
+    <view class="section__title"></view>
+    <input class="searchbar" bindinput="searchInput" name="input" placeholder="Search families" />
+    <button class="btn" style="background: none" bindtap="searchForm">..</button>
+  </view>
 </view>
+  
+<!-- <view class="container"></view> -->
 <view class="divider"></view>
 <view class="row">
   <view class="card-product" wx:for="{{hosts}}" wx:for-item="host" data-id="{{host.id}}" bindtap="goToShow">
