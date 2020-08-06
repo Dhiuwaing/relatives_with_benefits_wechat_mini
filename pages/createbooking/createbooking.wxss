@@ -1,0 +1,14 @@
+/* pages/createbooking/createbooking.wxss */
+
+.form {
+  padding: 10% 10%;
+  margin: 50rpx;
+  box-shadow: 3rpx 3rpx 3rpx lightgray;
+  }
+  .section {
+  margin: 30rpx 0;
+  }
+  .btn-area {
+  display: flex;
+  justify-content: space-evenly;
+  }
