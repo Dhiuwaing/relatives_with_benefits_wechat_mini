@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/show/show",
     "pages/createhost/createhost",
-    "pages/book/book"
+    "pages/book/book",
+    "pages/createbooking/createbooking"
   ],
   "window":{
     "backgroundTextStyle":"light",
