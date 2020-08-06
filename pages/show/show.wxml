@@ -8,6 +8,10 @@
     <view class="p">Description</view>    
   </view>
 </view>
+<view>Get current location</view>
+<view>Latitude : {{latitude}}</view>
+<view>Longitude : {{longitude}}</view>
+<map bindmarkertap="markertap" longitude="{{lg}}" latitude="{{lt}}" scale="{{sc}}" style="width: 100%; height: 80vh;" markers="{{mk}}"></map>
 
 <button class="btn-orange" bindtap="setPlain">Book</button>
 

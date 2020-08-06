@@ -22,14 +22,49 @@ Page({
       }
     })
     },
+    onLoad: function (options) {
+      let that = this
+      wx.authorize({
+        scope: 'scope.userLocation',
+          success(res){
+            console.log(res)
+            wx.chooseLocation({
+              success: function(res) {
+              console.log(res)
+            }
+          })
+        },
+        fail(err) {
+          console.log(err)
+        }
+      })
+    },
 
-
+    
   goToShow: function (e) {
     let index = e.currentTarget.dataset.index
     wx.navigateTo({
       url: `/pages/show/show?index=${index}`,
     })
   },
+  data: {
+    lt: "31.232065",
+    lg: "121.470645",
+    sc: '14',
+    mk: [{
+      iconPath: "/img/marker.png", // **1
+      id: 0,
+      latitude: 31.219614,
+      longitude: 121.443877,
+      width: 40,
+      height: 40,
+      callout: { content: "Le Wagon \n Shanghai, China", fontSize: 15, color: "#000000", padding: 10 }
+    }, //add more markers here]
+    ]
+  },
+  markertap(e) {
+    console.log(e.markerId)
+ },
 
 
 

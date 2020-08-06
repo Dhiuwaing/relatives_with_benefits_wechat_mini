@@ -14,6 +14,7 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    
 
   },
 
@@ -72,5 +73,17 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo
     })
-  }
+  },
+  onLoad: function (options) {
+    const that = this
+    wx.getLocation({
+      type: 'wgs84', // **1
+      success: function(res) {
+        const latitude = res.latitude
+        const longitude = res.longitude
+        that.setData({latitude, longitude})
+      }
+    })
+  },
+  
 })
