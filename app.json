@@ -20,27 +20,27 @@
       "list": [
         {
     "pagePath": "pages/index/index",
-    "text": "hosts",
-    "iconPath":  "/images/love.png",
-    "selectedIconPath": ""
+    "text": "Home",
+    "iconPath":  "/images/imagess/internet.png",
+    "selectedIconPath": "/images/imagess/property.png"
         },
         {
           "pagePath": "pages/book/book",
-          "text": "bookings",
-          "iconPath": "/images/love.png",
-          "selectedIconPath": ""
+          "text": "Bookings",
+          "iconPath": "/images/imagess/chatbla.png",
+          "selectedIconPath": "/images/imagess/chat.png"
               },
         {
       "pagePath": "pages/createhost/createhost",
-      "text": "add host",
-      "iconPath":  "/images/love.png",
-      "selectedIconPath": ""
+      "text": "Post",
+      "iconPath":  "/images/imagess/plane.png",
+      "selectedIconPath": "/images/imagess/planecol.png"
       },
       {
         "pagePath": "pages/createhost/createhost",
-        "text": "my profile",
-        "iconPath":  "/images/love.png",
-        "selectedIconPath": ""
+        "text": "Profile",
+        "iconPath":  "/images/imagess/man.png",
+        "selectedIconPath": "/images/imagess/mancol.png"
         }
       ]
       },
