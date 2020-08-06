@@ -3,16 +3,19 @@
   position: center;
   background-position: cover;
   width: 100vw;
+  object-fit: cover;
 }
 
 .h2 {
+  font-size: 45rpx;
   display: flex;
-  align-items: center;
   margin-top: 20rpx;
   height: 80rpx;
   padding-left :80rpx;
 }
-
+.p {
+  font-size: 35rpx;
+}
 .row {
   display: flex;
   justify-content: center;
