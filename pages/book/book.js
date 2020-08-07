@@ -12,8 +12,9 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    
+    },
 
-  },
 
   /**
    * Lifecycle function--Called when page is initially rendered
@@ -26,6 +27,18 @@ Page({
    * Lifecycle function--Called when page show
    */
   onShow: function () {
+    const page  = this
+    wx.request({
+      url: "http://localhost:3000/api/v1/bookings",
+      method: 'GET',
+      success(res) {
+        const bookings = res.data;
+        page.setData({
+          bookings: bookings,
+        });
+        console.log(bookings)
+      }
+    })
 
   },
 

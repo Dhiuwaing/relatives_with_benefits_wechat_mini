@@ -1,17 +1,15 @@
 <!--pages/book/book.wxml-->
-<text class="page title">My Bookings</text>
-
 <view class="divider"></view>
 
-<view class="card">
+<view class="card" wx:for="{{bookings}}" wx:for-item="booking">
   <view class="card-blue">
     <view class= "h4">Name</view>
       <view class="name-bar">
-        <view class="p"> Name of family </view>
+        <view class="p">{{booking.time}} </view>
       </view>
     <view class="h4">Message</view>
       <view class="message-bar">
-        <view class="p">Message to your grandmother </view>
+        <view class="p">{{booking.message}}</view>
       </view>
      <view class="delete">
       <button plain="{{plain}}" type="warn" class="btn-red">Delete</button>

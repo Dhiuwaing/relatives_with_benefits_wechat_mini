@@ -5,20 +5,26 @@
   <!-- <h1>Your Booking</h1> -->
  
 
+
 <view class="form">
 <form bindsubmit="formSubmit" bindreset="formReset">
+
 <view class="section0">
-<input name="name" placeholder="Type in your name..." />
+<input name="message" placeholder="Send your message to host.." />
 </view>
+
 <view class="section1">
-<input name="description" placeholder="Type in your description..." />
+ <picker mode="date" value="{{date}}" start="2020-08-07" end="2021-09-01" bindchange="bindDateChange">
+    <view class="picker">
+    Time: {{date}}
+    </view>
+  </picker>
 </view>
-<view class="section2">
-<input name="location" placeholder="Type in your location..." />
-</view>
+
 <view class="btn-area">
 <button type="primary" form-type="submit">Submit</button>
 <button form-type="reset">Reset</button>
 </view>
+
 </form>
 </view>

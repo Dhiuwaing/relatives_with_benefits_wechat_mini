@@ -40,11 +40,12 @@ Page({
 
   },
 
-  goToBook: function (e) {
+
+  goToCreateBooking: function (e) {
     let id = e.currentTarget.dataset.id
     console.log(id)
-    wx.switchTab({
-      url: `/pages/book/book?hostId=${id}`,
+    wx.navigateTo({
+      url: `/pages/createbooking/createbooking?id=${id}`,
     })
   },
 
