@@ -13,8 +13,6 @@
     "navigationBarTextStyle":"black"
   },
 
-  
-
   "tabBar":
    {
     "color": "#00071E",
@@ -54,4 +52,5 @@
       "desc": "A message to tell the user why you need permission"
     }
   }
+  
 }

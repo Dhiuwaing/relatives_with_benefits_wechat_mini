@@ -3,14 +3,15 @@
 <form bindsubmit="formSubmit" bindreset="formReset">
   <picker bindchange="bindPickerChange" value="{{array}}" range="{{array}}">
     <view class="picker">
-      Select your role：{{array[key]}}
+      Select your role:{{array[key]}}
+
     </view>
   </picker>
 <view class="picker-section">
 <input name="name" placeholder="Type in your name..." />
 </view>
-<view class="picker-section">
-<input name="description" placeholder="Describe yourself.." />
+<view class="picker-section box">
+  <textarea placeholder=" Describe yourself..." auto-focus />
 </view>
 <view class="picker-section">
 <picker bindchange="bindPickerChange2" value="{{array2}}" range="{{array2}}">
@@ -20,11 +21,7 @@
   </picker>
 </view>
 <view class="picker-section">
-<input name="category" placeholder="Type in your category..." />
-</view>
-
-<view class="picker-section">
- <checkbox-group name="checkbox">
+ <checkbox-group class="checkbox"name="checkbox">
       <label><checkbox value="checkbox1"/>Female</label>
       <label><checkbox value="checkbox2"/>Male</label>
     </checkbox-group>
@@ -38,10 +35,16 @@
 </view>
 </view>
 <view class="picker-section">
-<input name="url" placeholder="Type in your url..." />
+<input name="url" placeholder="What cuisine do you like?" />
 </view>
 <view class="picker-section">
-<input name="image_url" placeholder="Type in your image url..." />
+<input name="category" placeholder="Any hobbies?" />
+</view>
+<view class="picker-section">
+<input name="image_url" placeholder="Price per hour?"/>
+<view class="page-section">
+    <view class="weui-cells__title"></view>
+    </view>
 </view>
 <view class="btn-area">
 <button type="primary" form-type="submit">Submit</button>
