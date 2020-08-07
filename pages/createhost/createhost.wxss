@@ -24,3 +24,6 @@
     display: flex;
     justify-content: space-between;
   }
+  .btn-area {
+    margin-top: 40rpx;
+  }

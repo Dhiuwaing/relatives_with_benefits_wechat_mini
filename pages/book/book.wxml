@@ -16,7 +16,7 @@
         <view class="p">{{booking.message}}</view>
       </view>
      <view class="delete" >
-      <button plain="{{plain}}" bindtap="deleteBooking" type="warn" class="btn-red" data-id="{{booking.id}}">Delete</button>
+      <button style="background-color: white;" plain="{{plain}}" bindtap="deleteBooking" type="warn" class="btn-red" data-id="{{booking.id}}">Delete</button>
       </view>
       <view>
     </view>

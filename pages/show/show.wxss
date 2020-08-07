@@ -45,9 +45,9 @@ border-radius: 8rpx;
   margin-bottom: 80rpx;
 }
 .btn-orange {
-  background-color:rgb(255, 219, 8);
-  color: white;
-  text-shadow: 2rpx 2rpx 6rpx rgba(0, 0, 0,0.4);
+  background-color:rgb(253, 135, 0);
+  color:white;
+  text-shadow: 4rpx 4rpx 4rpx rgba(0, 0, 0,0.7);
   margin-right: 30rpx;
 }
 
