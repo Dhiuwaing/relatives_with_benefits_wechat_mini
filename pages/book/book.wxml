@@ -11,8 +11,8 @@
       <view class="message-bar">
         <view class="p">{{booking.message}}</view>
       </view>
-     <view class="delete">
-      <button plain="{{plain}}" type="warn" class="btn-red">Delete</button>
+     <view class="delete" >
+      <button plain="{{plain}}" bindtap="deleteBooking" type="warn" class="btn-red" data-id="{{booking.id}}">Delete</button>
       </view>
       <view>
     </view>
