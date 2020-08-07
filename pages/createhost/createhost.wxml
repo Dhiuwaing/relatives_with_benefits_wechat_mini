@@ -3,23 +3,14 @@
 <form bindsubmit="formSubmit" bindreset="formReset">
   <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
     <view class="picker">
-
-      Select your role:{{array[key]}}
-
-=======
-      Select your role：{{array[index]}}
-
+      Select your role:{{array[index]}}
     </view>
   </picker>
-
-<input name="name" placeholder="Type in your name..." />
+<view class="picker-section">
 </view>
 <view class="picker-section box">
   <textarea placeholder=" Describe yourself..." auto-focus />
 </view>
-
-<input name="description" placeholder="Describe yourself.." />
-
 <view class="picker-section">
 <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
     <view class="picker">
@@ -27,18 +18,11 @@
     </view>
   </picker>
 </view>
-
 <view class="picker-section">
  <checkbox-group class="checkbox"name="checkbox">
       <label><checkbox value="checkbox1"/>Female</label>
       <label><checkbox value="checkbox2"/>Male</label>
-
-
- <checkbox-group name="gender">
-      <label><checkbox value="female"/>Female</label>
-      <label><checkbox value="male"/>Male</label>
-    </checkbox-group>
-
+ </checkbox-group>
 <view class="section section_gap">
   <text class="section__title"> Set your age </text>
   <view class="body-view">
@@ -59,11 +43,6 @@
     <view class="weui-cells__title"></view>
     </view>
 </view>
-
-<input name="url" placeholder="Type in your url..." />
-
-<input name="image_url" placeholder="Type in your image url..." />
-
 <view class="btn-area">
 <button type="primary" form-type="submit">Submit</button>
 <button form-type="reset">Reset</button>
