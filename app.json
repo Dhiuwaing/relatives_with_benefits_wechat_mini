@@ -4,7 +4,8 @@
     "pages/show/show",
     "pages/createhost/createhost",
     "pages/book/book",
-    "pages/createbooking/createbooking"
+    "pages/createbooking/createbooking",
+    "pages/profile/profile"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -37,7 +38,7 @@
       "selectedIconPath": "/images/imagess/planecol.png"
       },
       {
-        "pagePath": "pages/createhost/createhost",
+        "pagePath": "pages/profile/profile",
         "text": "Profile",
         "iconPath":  "/images/imagess/man.png",
         "selectedIconPath": "/images/imagess/mancol.png"
