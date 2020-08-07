@@ -4,16 +4,13 @@
   <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
     <view class="picker">
 
-      Select your role:{{array[key]}}
-
-=======
+    
       Select your role：{{array[index]}}
 
     </view>
   </picker>
 
 <input name="name" placeholder="Type in your name..." />
-</view>
 <view class="picker-section box">
   <textarea placeholder=" Describe yourself..." auto-focus />
 </view>
@@ -32,6 +29,8 @@
  <checkbox-group class="checkbox"name="checkbox">
       <label><checkbox value="checkbox1"/>Female</label>
       <label><checkbox value="checkbox2"/>Male</label>
+</checkbox-group>
+</view>
 
 
  <checkbox-group name="gender">
@@ -46,7 +45,6 @@
   </view>
 </view>
 
-</view>
 <view class="picker-section">
 <input name="url" placeholder="What cuisine do you like?" />
 </view>
