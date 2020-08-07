@@ -2,7 +2,7 @@
 
 <view class="banner-wrapper">
   <view class="white"></view>
-    <image class="banner" src="/images/banban.jpg"></image>
+    <image class="banner" src="/images/bansmall.jpg"></image>
   <view class="section">
     <view class="section__title"></view>
     <input class="searchbar" bindinput="searchInput" name="input" placeholder="Search" />
