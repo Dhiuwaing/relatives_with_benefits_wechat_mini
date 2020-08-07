@@ -3,7 +3,11 @@
 
 <view class="card" wx:for="{{bookings}}" wx:for-item="booking">
   <view class="card-blue">
-    <view class= "h4">Name</view>
+    <view class= "h4">Your Host</view>
+      <view class="name-bar">
+        <view class="p">{{booking.user}} </view>
+      </view>
+      <view class= "h4">Time</view>
       <view class="name-bar">
         <view class="p">{{booking.time}} </view>
       </view>

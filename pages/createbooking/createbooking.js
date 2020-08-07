@@ -24,6 +24,7 @@ Page({
   formSubmit: function(event) {
     let message = event.detail.value.message;
     let time = this.data.date;
+    console.log(app.globalData.userId)
     let booking = {
       user_id: app.globalData.userId,
       confirmed: 0,
