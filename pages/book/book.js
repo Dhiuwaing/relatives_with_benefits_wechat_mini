@@ -42,6 +42,26 @@ Page({
 
   },
 
+  
+    //...
+  
+    // binded to delete button
+    deleteBooking(e) {
+      const data = e.currentTarget.dataset;
+      console.log(data)
+      // make a DELETE request
+      wx.request({
+        url: `http://localhost:3000/api/v1/bookings/${data.id}`,
+        method: 'DELETE',
+        success() {
+          // redirect to index page when done
+          wx.reLaunch({
+            url: '/pages/book/book'
+          });
+        }
+      });
+    },
+
   /**
    * Lifecycle function--Called when page hide
    */
