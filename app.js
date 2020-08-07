@@ -23,7 +23,7 @@ App({
   },
   globalData: {
     userInfo: null,
-    host: "http://localhost:3000/api/v1"
-    // host: "http://relatives-with-benefits.herokuapp.com/api/v1"
+    // host: "http://localhost:3000/api/v1"
+    host: "http://relatives-with-benefits.herokuapp.com/api/v1"
   },
 })

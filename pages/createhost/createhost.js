@@ -1,6 +1,7 @@
 // pages/createhost/createhost.js
 const app = getApp();
-console.log(app.globalData.userId);
+const host = app.globalData.host;
+console.log(33, host)
 Page({
   /**
    * Page initial data
@@ -40,7 +41,7 @@ Page({
     let url = event.detail.value.url;
     let image_url = event.detail.value.image_url;
     let name = event.detail.value.name;
-    let host = {
+    let hostObject = {
       user_id: app.globalData.userId,
       name: name,
       description: description,
@@ -51,16 +52,18 @@ Page({
       image_url: image_url,
       age: age
     }
-    console.log(host)
     wx.request({
-      url: `http://localhost:3000/api/v1/hosts`,
+      url: `${host}/hosts`,
       method: 'POST',
-      data: host,
+      data: hostObject,
       success: (res) => {
         console.log('create', res)
         wx.switchTab({
           url: '/pages/index/index'
         })
+      }, 
+      fail: (res) => {
+        console.log(44, res)
       }
     })
   },

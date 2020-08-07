@@ -1,5 +1,6 @@
 // pages/createbooking/createbooking.js
-const app = getApp()
+const app = getApp();
+const host = app.globalData.host;
 
 Page({
 
@@ -34,7 +35,7 @@ Page({
     };
     console.log("event.body",booking)
     wx.request({
-      url: `http://localhost:3000/api/v1/bookings`,
+      url: `${host}bookings`,
       method: 'POST',
       data: {booking: booking},
       success: (res) => {
@@ -42,7 +43,10 @@ Page({
         wx.switchTab({
         url: '/pages/book/book'
       })
-    }
+    },  
+      fail: (res) => {
+        console.log(11, res)
+      }
   })
 },
     

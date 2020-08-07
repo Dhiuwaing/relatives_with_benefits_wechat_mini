@@ -1,4 +1,6 @@
 // pages/book/book.js
+const app = getApp();
+const host = app.globalData.host;
 Page({
 
   /**
@@ -29,7 +31,7 @@ Page({
   onShow: function () {
     const page  = this
     wx.request({
-      url: "http://localhost:3000/api/v1/bookings",
+      url: `${host}/bookings`,
       method: 'GET',
       success(res) {
         const bookings = res.data;

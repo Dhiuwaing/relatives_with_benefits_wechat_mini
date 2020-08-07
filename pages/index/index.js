@@ -11,6 +11,7 @@ Page({
 
   onShow: function () {
     const page  = this
+    console.log("index")
     wx.request({
       url: `${host}/hosts`,
       method: 'GET',
@@ -20,7 +21,10 @@ Page({
         page.setData({
           hosts: hosts,
         });
-        console.log(hosts)
+        console.log(33, hosts)
+      }, 
+      fail: (res) => {
+        console.log(22, res)
       }
     })
     },
