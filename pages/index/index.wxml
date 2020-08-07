@@ -5,7 +5,7 @@
     <image class="banner" src="/images/banban.jpg"></image>
   <view class="section">
     <view class="section__title"></view>
-    <input class="searchbar" bindinput="searchInput" name="input" placeholder="Search families" />
+    <input class="searchbar" bindinput="searchInput" name="input" placeholder="Search" />
     <button class="btn" style="background: none" bindtap="searchForm">..</button>
   </view>
 </view>

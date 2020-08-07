@@ -3,11 +3,20 @@
 <form bindsubmit="formSubmit" bindreset="formReset">
   <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
     <view class="picker">
+
+      Select your role:{{array[key]}}
+
+=======
       Select your role：{{array[index]}}
+
     </view>
   </picker>
 
 <input name="name" placeholder="Type in your name..." />
+</view>
+<view class="picker-section box">
+  <textarea placeholder=" Describe yourself..." auto-focus />
+</view>
 
 <input name="description" placeholder="Describe yourself.." />
 
@@ -19,6 +28,12 @@
   </picker>
 </view>
 
+<view class="picker-section">
+ <checkbox-group class="checkbox"name="checkbox">
+      <label><checkbox value="checkbox1"/>Female</label>
+      <label><checkbox value="checkbox2"/>Male</label>
+
+
  <checkbox-group name="gender">
       <label><checkbox value="female"/>Female</label>
       <label><checkbox value="male"/>Male</label>
@@ -29,6 +44,20 @@
   <view class="body-view">
     <slider bindchange="slider4change" min="18" max="80" name="age" show-value/>
   </view>
+</view>
+
+</view>
+<view class="picker-section">
+<input name="url" placeholder="What cuisine do you like?" />
+</view>
+<view class="picker-section">
+<input name="category" placeholder="Any hobbies?" />
+</view>
+<view class="picker-section">
+<input name="image_url" placeholder="Price per hour?"/>
+<view class="page-section">
+    <view class="weui-cells__title"></view>
+    </view>
 </view>
 
 <input name="url" placeholder="Type in your url..." />
