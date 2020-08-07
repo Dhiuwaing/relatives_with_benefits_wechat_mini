@@ -8,7 +8,8 @@ Page({
   data: {
     array: ["grandfather", "grandmother", "mother", "father", "brother", "sister"],
     array2: ["Shanghai", "Taipei", "Hong Kong", "Xi'an", "Beijing", "Tianjin", "Haerbin", "Gaoxiong", "Pingdong"],
-    array3: ['Woman', 'Man']
+    items: ['Woman', 'Man'],
+    
   },
   bindPickerChange: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail)
@@ -19,20 +20,22 @@ Page({
   bindPickerChange2: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail)
     this.setData({
-      index: e.detail.value
+      index2: e.detail.value
     })
   },
-  bindPickerChange3: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail)
+  checkboxChange: function (e) {
+    console.log('checkbox发生change事件，携带value值为：', e.detail.value)
     this.setData({
-      index: e.detail.value
+      gender: e.detail.value
     })
   },
   formSubmit: function(event) {
-    let description = event.detail.value.description;
-    let location = event.detail.value.location;
-    let category = event.detail.value.category;
-    let gender = event.detail.value.gender;
+    console.log(event)
+    
+    let description = event.detail.value.description
+    let location = this.data.index2;
+    let category = this.data.index;
+    let gender = event.detail.value.gender[0];
     let age = event.detail.value.age;
     let url = event.detail.value.url;
     let image_url = event.detail.value.image_url;
@@ -48,6 +51,7 @@ Page({
       image_url: image_url,
       age: age
     }
+    console.log(host)
     wx.request({
       url: `http://localhost:3000/api/v1/hosts`,
       method: 'POST',
@@ -55,11 +59,11 @@ Page({
       success: (res) => {
         console.log('create', res)
         wx.switchTab({
-        url: '/pages/index/index'
-      })
-    }
-  })
-},
+          url: '/pages/index/index'
+        })
+      }
+    })
+  },
     
 
   /**
