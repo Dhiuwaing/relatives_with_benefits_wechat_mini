@@ -48,9 +48,7 @@
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "permission": {
-    "scope.userLocation": {
-      "desc": "A message to tell the user why you need permission"
-    }
+    
   }
   
 }
