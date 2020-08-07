@@ -11,14 +11,17 @@
 </view>
   
 
-<view class="divider"></view>
+<!-- <view class="divider"></view> -->
 <view class="row">
   <view class="card-product" wx:for="{{hosts}}" wx:for-item="host" data-id="{{host.id}}" bindtap="goToShow">
-  <image class='avatar' src="{{host.url}}"></image>
-  <view class='h2'>{{host.name}}</view>
-    <view class='h3'>{{host.category}}</view>
-    <view class='p'>{{host.description}}</view>
+    <image class='avatar' src="{{host.url}}"></image>
+  <view class='h2'>{{host.name}} </view> 
+  <view class='h3'>{{host.category}}</view>
+  <view class='p'>{{host.description}}</view>
+  <view class='p1'>{{host.location}}</view>
+    
   </view>
   <view wx:for="{{hosts.length%2}}" class="card-product-1"></view>
 </view>
+
 
