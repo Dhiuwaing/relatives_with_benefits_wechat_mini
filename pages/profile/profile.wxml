@@ -1,0 +1,15 @@
+<!--pages/profile/profile.wxml-->
+<image class='img' src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596797700392&di=8b4dae7b0511e53ba46f684e1c1a03b9&imgtype=0&src=http%3A%2F%2Fgif-finder.com%2Fwp-content%2Fuploads%2F2015%2F03%2FDonald-Trump-Angry.gif"></image>
+  <view class="row">
+    <view class="host-card">
+      <view class="local">
+          <view class="h2">Donald Trump</view>
+          <view class="p1">Washington D.C.</view>
+      </view>
+        <view class="p">74</view> 
+        <view class="description"> I am a stale dustless deformed cheeto puff who plans on destroying everything just so I can get what he wants. Rent me or I will ban you.</view> 
+        <view></view>
+    </view>
+  </view>
+<map id="map" longitude="-77.036560" latitude="38.897957" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 90%; height: 200px;"></map>
+
