@@ -8,16 +8,6 @@
   </picker>
 <view class="picker-section">
 </view>
-
-
-    
-      Select your role：{{array[index]}}
-
-    </view>
-  </picker>
-
-<input name="name" placeholder="Type in your name..." />
-
 <view class="picker-section box">
   <textarea placeholder=" Describe yourself..." auto-focus />
 </view>
@@ -29,22 +19,11 @@
   </picker>
 </view>
 <view class="picker-section">
- <checkbox-group class="checkbox"name="checkbox">
-      <label><checkbox value="checkbox1"/>Female</label>
-      <label><checkbox value="checkbox2"/>Male</label>
-
-</checkbox-group>
-
-</checkbox-group>
-</view>
-
 
  <checkbox-group name="gender">
       <label><checkbox value="female"/>Female</label>
       <label><checkbox value="male"/>Male</label>
     </checkbox-group>
-
-
 <view class="section section_gap">
   <text class="section__title"> Set your age </text>
   <view class="body-view">
@@ -52,6 +31,7 @@
   </view>
 </view>
 
+</view>
 <view class="picker-section">
 <input name="url" placeholder="What cuisine do you like?" />
 </view>
