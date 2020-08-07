@@ -12,6 +12,5 @@
 <view>Host's location</view>
 
 <map id="map" longitude="113.324520" latitude="23.099994" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 90%; height: 200px;"></map>
-<button class="btn-orange" data-id="{{host.id}}" bindtap="goToBook">Book</button>
-
+<button class="btn-orange" data-id="{{host.id}}" bindtap="goToCreateBooking">Book</button>
 
