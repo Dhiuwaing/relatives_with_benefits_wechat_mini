@@ -20,12 +20,14 @@
 }
 .h3  {
   font-size:28rpx;
+  color: rgb(87, 87, 87);
   font-weight: bolder;
   padding-left: 32rpx;
   padding-bottom: 10rpx;
 }
 .h2 {
   font-size:40rpx;
+  color: rgb(44, 44, 44);
   font-weight: bolder;
   padding-left: 32rpx;
   padding-bottom: 5rpx;
